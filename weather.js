@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Rain: "weatherappimg/images/rain.svg",
         Drizzle: "weatherappimg/images/drizzle.svg",
         Mist: "weatherappimg/images/mist.svg",
-        Drizzle: "weatherappimg/images/drizzle.svg",
+        Snow: "weatherappimg/images/snow.svg",
       };
 
       if (weatherIcons[data.weather[0].main]) {
