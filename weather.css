@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 2px solid #00a6fb;
+    background: transparent;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 25px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.search input:hover {
+    color: #fff;
+    outline: 2px solid #2980b9;
+    transform: scale(1.05);
+}
+
+.search input:active {
+    transform: scale(0.95);
+}
+
+.search button {
+    border: 0;
+    outline: 2px solid #00a6fb;
+    background: transparent;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search button:hover {
+    outline: 2px solid #2980b9;
+    transform: scale(1.05);
+}
+
+.search button:active {
+    transform: scale(0.95);
+}
+
+.search button img {
+    width: 35px;
+
+}
+
+.weather-icon {
+    width: 180px;
+
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.humidity,
+.wind {
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
+}
+
+/* Invalid city name / 'error' Animation */
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+    color: red;
+    animation: vibrate 0.3s;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(-2px);
+    }
+
+    25% {
+        transform: translateX(2px);
+    }
+
+    50% {
+        transform: translateX(-2px);
+    }
+
+    75% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(-2px);
+    }
+}
+
+/* Background Animation */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-size: cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+
+}
